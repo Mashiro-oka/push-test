@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="id" style="background-color: #0a0a0c; color-scheme: dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mashiro-oka — Blog</title>
+    <style>
+      html,
+      body {
+        background-color: #0a0a0c;
+      }
+    </style>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="/" class="logo"><span>真</span>城-oka</a>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/skills">Skills</a>
+        <a href="/projects">Projects</a>
+        <a href="/blog" class="active">Blog</a>
+        <a href="/contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section">
+        <h3 class="section-title">Notes</h3>
+        <div class="blog-grid stagger">
+          <div class="blog-card">
+            <div class="date">October 1, 2026</div>
+            <h4>Flask for Beginners</h4>
+            <p>Flask is a Python micro-framework for web development. It’s lightweight, flexible, and great for learning routing, templates, and static files.</p>
+            <span class="tag">Flask</span>
+          </div>
+          <div class="blog-card">
+            <div class="date">October 8, 2026</div>
+            <h4>Git Functions</h4>
+            <p>Git is used to track code changes, maintain a project’s version history, and facilitate collaboration with others.</p>
+            <span class="tag">UI/UX</span>
+          </div>
+          <div class="blog-card">
+            <div class="date">October 15, 2026</div>
+            <h4>CSS Grid vs Flexbox</h4>
+            <p>When should you use Grid, and when should you use Flexbox? Simply put: Grid for 2D layouts, Flexbox for 1D layouts.</p>
+            <span class="tag">CSS</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>&copy; 2026 Mashiro-oka</footer>
+  </body>
+</html>

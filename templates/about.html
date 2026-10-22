@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="id" style="background-color: #0a0a0c; color-scheme: dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mashiro-oka — About</title>
+    <style>
+      html,
+      body {
+        background-color: #0a0a0c;
+      }
+    </style>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="/" class="logo"><span>真</span>城-oka</a>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/about" class="active">About</a>
+        <a href="/skills">Skills</a>
+        <a href="/projects">Projects</a>
+        <a href="/blog">Blog</a>
+        <a href="/contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section">
+        <h3 class="section-title">About Me</h3>
+        <div class="about-content">
+          <p>
+            I am an <span class="highlight">Informatics student at Universitas Nahdtlatul Ulama Yogyakarta</span> with an interest in web development. My journey began with
+            curiosity about how websites work &mdash; from clicking a button to storing data on a server.
+          </p>
+          <p>
+            Currently, I am focused on improving my skills in <span class="highlight">HTML, CSS, Flask</span>, and other supporting technologies. Every line of code I write is a
+            step toward becoming better.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h3 class="section-title">Journey</h3>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="year">2025 &mdash; Present</div>
+            <h4>University</h4>
+            <p>Exploring new things and learning about various topics, especially technology.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="year">2021</div>
+            <h4>High School Graduation &amp; First Steps into Coding</h4>
+            <p>Spend the gap years exploring coding basics, and built up a foundation for tech step by step.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="year">2006</div>
+            <h4>Born</h4>
+            <p>The beginning of my journey in this world.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="quote">
+          "Take it easy, enjoy the little things, and keep moving forwards &mdash; just like a cat having its favorite mogu-mogu time."
+          <cite>&mdash; Mashiro</cite>
+        </div>
+      </section>
+    </main>
+
+    <footer>&copy; 2026 Mashiro-oka</footer>
+  </body>
+</html>

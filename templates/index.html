@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="id" style="background-color: #0a0a0c; color-scheme: dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mashiro-oka — Home</title>
+    <style>
+      html,
+      body {
+        background-color: #0a0a0c;
+      }
+    </style>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="/" class="logo"><span>真</span>城-oka</a>
+      <nav>
+        <a href="/" class="active">Home</a>
+        <a href="/about">About</a>
+        <a href="/skills">Skills</a>
+        <a href="/projects">Projects</a>
+        <a href="/blog">Blog</a>
+        <a href="/contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-image">
+          <img src="{{ url_for('static', filename='images/okayun.jpeg') }}" alt="'Mashiro" />
+        </div>
+        <div class="hero-text">
+          <p class="tagline">Informatics Student</p>
+          <h2>Hi, i'm <span class="highlight">'Athif</span>.<br /><span class="typewriter">a super newbie programmer.</span></h2></h2>
+          <p>
+            Currently studying at Universitas Nahdlatul Ulama Yogyakarta &mdash; Focused on mastering the core fundamentals of Web Programming, Databases, and Computer Networking.
+            Still learning how data, code, and systems connect from the ground up.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h3 class="section-title">Core Subjects</h3>
+        <div class="card-grid stagger">
+          <div class="card-3d">
+            <h4><span>01</span> Web Programming</h4>
+            <p>Learning to build web applications from frontend to backend using modern technologies.</p>
+          </div>
+          <div class="card-3d">
+            <h4><span>02</span> Databases</h4>
+            <p>Understanding the concepts of design, implementation, and optimization of relational databases.</p>
+          </div>
+          <div class="card-3d">
+            <h4><span>03</span> Computer Networking</h4>
+            <p>Studying network architecture, protocols, and security for distributed systems.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section stagger">
+        <h3 class="section-title">Quick Stats</h3>
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-icon">
+              <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 10L12 5 2 10l10 5 10-5z" />
+                <path d="M6 12v5c0 1.5 3 3 6 3s6-1.5 6-3v-5" />
+              </svg>
+            </div>
+            <div class="number">3</div>
+            <div class="label">Semester</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">
+              <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" /></svg>
+            </div>
+            <div class="number">3</div>
+            <div class="label">Projects</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">
+              <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M8 9l-4 3 4 3M16 9l4 3-4 3M13 5l-2 14" /></svg>
+            </div>
+            <div class="number">5</div>
+            <div class="label">Languages &mdash; in progress</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">
+              <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="9" />
+                <path d="M12 7v5l3 2" />
+              </svg>
+            </div>
+            <div class="number">∞</div>
+            <div class="label">Curiosity</div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>&copy; 2026 Mashiro-oka</footer>
+  </body>
+</html>

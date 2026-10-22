@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="id" style="background-color: #0a0a0c; color-scheme: dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mashiro-oka — Projects</title>
+    <style>
+      html,
+      body {
+        background-color: #0a0a0c;
+      }
+    </style>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="/" class="logo"><span>真</span>城-oka</a>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/skills">Skills</a>
+        <a href="/projects" class="active">Projects</a>
+        <a href="/blog">Blog</a>
+        <a href="/contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section">
+        <h3 class="section-title">Projects</h3>
+        <div class="project-grid stagger">
+          <div class="project-card">
+            <div class="project-thumb">
+              <img src="{{ url_for('static', filename='images/portofolio-web.png') }}" alt="portofolio web" />
+            </div>
+            <div class="project-body">
+              <h4><a href="https://github.com/Mashiro-oka/portofolio-web.git" class="project-card" target="_blank">Portofolio Web</a></h4>
+              <p>A personal portfolio website featuring a dark glass design, CSS animations, and Flask.</p>
+              <div class="project-tech"><span>HTML</span><span>CSS</span><span>Flask</span></div>
+            </div>
+          </div>
+          <div class="project-card">
+              <div class="project-thumb">
+              <img src="{{ url_for('static', filename='images/navbar-test.png') }}" alt="navbar-test" />
+              </div>
+              <div class="project-body">
+                <h4><a href="https://github.com/Mashiro-oka/navbar-test.git" class="project-card" target="_blank" rel="noopener noreferrer">Navbar Test</a></h4>
+                <p>Creating a simple navigation bar using HTML, CSS, and JavaScript with dark and light theme mode.</p>
+                <div class="project-tech"><span>HTML</span><span>CSS</span><span>JS</span></div>
+              </div>
+            </a>
+          </div>
+          <div class="project-card">
+            <div class="project-thumb">
+              <img src="{{ url_for('static', filename='images/just-about-my-oshi.png.png') }}" alt="just-about-my-oshi" />
+            </div>
+            <div class="project-body">
+                <h4><a href="https://github.com/Mashiro-oka/just-about-my-oshi.git" class="project-card" target="_blank" rel="noopener noreferrer">just-about-my-oshi</a></h4>
+              <p>
+                Creating a personal fan page about my oshi using HTML, CSS, and JavaScript. Using version tags to track my overall skill development, with v0.1 focusing on
+                improving my CSS skills.
+              </p>
+              <div class="project-tech"><span>HTML</span><span>CSS</span><span>JS</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>&copy; 2026 Mashiro-oka</footer>
+  </body>
+</html>
